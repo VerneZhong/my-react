@@ -8,12 +8,16 @@ class TodoItem extends Component {
     }
 
     render() {
-        return <div onClick={this.handleClick}>{this.props.content}</div>
+        const {content} = this.props;
+        return <div onClick={this.handleClick}>{content}</div>
     }
 
     handleClick() {
         // 子组件通过this.props来接收父组件传递的参数和方法
-        this.props.deleteItem(this.props.index);
+        // this.props.deleteItem(this.props.index);
+
+        const {deleteItem, index} = this.props;
+        deleteItem(index);
     }
 }
 
