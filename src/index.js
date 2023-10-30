@@ -7,7 +7,7 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 // JSX语法
 root.render(
     <React.StrictMode>
-        <App/>
+        {/*<App/>*/}
         <TodoList/>
     </React.StrictMode>
 );
